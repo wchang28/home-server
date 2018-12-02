@@ -4,7 +4,8 @@
   "description": "Home Server",
   "scripts": {
     "transpile": "tsc",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/app.js",
+    "postinstall": "npm run transpile"
   },
   "repository": {
     "type": "git",
