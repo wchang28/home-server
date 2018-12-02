@@ -6,6 +6,10 @@
     "transpile": "tsc",
     "start": "node ./dist/app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wchang28/home-server.git"
+  },
   "author": "Wen Chang",
   "license": "MIT",
   "dependencies": {
