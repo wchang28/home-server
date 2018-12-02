@@ -44,6 +44,13 @@ if (emailRecipients.length === 0) {
 let port = ((process.env.PORT as any) as number) || 8080;
 let hostname = process.env.HOSTNAME || "127.0.0.1";
 
+console.log(`[${new Date().toISOString()}]: gmailUser=${gmailUser}`);
+console.log(`[${new Date().toISOString()}]: gmailPassword=${gmailPassword}`);
+console.log(`[${new Date().toISOString()}]: senderEmail=${senderEmail}`);
+console.log(`[${new Date().toISOString()}]: emailRecipients=${JSON.stringify(emailRecipients)}`);
+console.log(`[${new Date().toISOString()}]: port=${port}`);
+console.log(`[${new Date().toISOString()}]: hostname=${hostname}`);
+
 let app = express();
 
 app.use((req: express.Request, res: express.Response, next: express.NextFunction) => {
